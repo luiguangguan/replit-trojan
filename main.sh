@@ -102,6 +102,7 @@ run_xray() {
     else
         USER_PASSWORD=${PASSWORD}
     fi
+    WSPATH="/";
     if [ "${WSPATH}" = "" ]; then
         USER_PATH=/$(curl -s $REPLIT_DB_URL/tr_path)
     else
